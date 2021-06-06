@@ -7,17 +7,16 @@ var CF_PROXY_OFF = {'cloudflare_proxy': 'off'};     // Proxy disabled.
 var CF_PROXY_ON = {'cloudflare_proxy': 'on'};       // Proxy enabled.
 
 // k8s clusters
-var K8S0 = "k8s0.veriga.net."
+var K8S0 = "97123e645323ef75300036546ecbafc0-408290970.eu-west-1.elb.amazonaws.com."
 
 /**** veriga.net ****/
 D("veriga.net",
     REG_NONE,
     DnsProvider(CLOUDFLARE),
-    A("@", "51.75.174.236", CF_PROXY_ON),
-    A("k8s0", "51.75.174.236", CF_PROXY_ON),
-    A("registry", "51.75.174.236", CF_PROXY_ON),
+    A("@", "52.50.29.1", CF_PROXY_ON),
     CNAME("notary", K8S0, CF_PROXY_ON),
     CNAME("tasks", K8S0, CF_PROXY_ON),
+    CNAME("registry", K8S0, CF_PROXY_ON),
     CNAME("www", K8S0, CF_PROXY_ON),
     CNAME("_79f74ed889024fce4615ae0db3ec6350", "_4cfaaa5018d5ce413be013df88775e01.xrchbtpdjs.acm-validations.aws.", CF_PROXY_ON),
     CNAME("_134ed75b874338c542ddd97f370f2f5b.k8s0", "_98517859d8189057fd26060d16c904e5.xrchbtpdjs.acm-validations.aws.", CF_PROXY_ON),
