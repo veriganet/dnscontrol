@@ -31,3 +31,5 @@ steps:
         - promote
       target:
         - prod
+    depends_on:
+      - preview
