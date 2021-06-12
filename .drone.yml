@@ -7,6 +7,8 @@ steps:
     image: stackexchange/dnscontrol:latest
     settings:
       from_secret: docker_secret
+    environment:
+      CLOUD_FLARE_API_TOKEN:
+        from_secret: CLOUD_FLARE_API_TOKEN
     commands:
-      - printenv DNSCONTROL_CREDS | tee creds.json
       - dnscontrol preview
