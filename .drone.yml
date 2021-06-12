@@ -8,6 +8,6 @@ steps:
     settings:
       from_secret: docker_secret
     commands:
-      - printenv DNSCONTROL_CREDS | tee creds.json
-      - cat creds.json
+      - sed -i 's/$CLOUD_FLARE_API_TOKEN/CLOUD_FLARE_API_TOKEN/g' creds_template.json
+      - mv creds_template.json > creds.json
       - dnscontrol preview
