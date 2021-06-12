@@ -22,7 +22,8 @@ steps:
     settings:
       from_secret: docker_secret
     environment:
-      from_secret: CLOUD_FLARE_API_TOKEN
+      CLOUD_FLARE_API_TOKEN:
+        from_secret: CLOUD_FLARE_API_TOKEN
     commands:
       - dnscontrol push
     when:
