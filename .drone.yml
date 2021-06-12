@@ -9,4 +9,5 @@ steps:
       from_secret: docker_secret
     commands:
       - printenv DNSCONTROL_CREDS | tee creds.json
+      - cat creds.json
       - dnscontrol preview
