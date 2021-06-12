@@ -1,4 +1,3 @@
----
 kind: pipeline
 type: kubernetes
 name: dnscontrol
@@ -11,10 +10,3 @@ steps:
     commands:
       - printenv DNSCONTROL_CREDS | tee creds.json
       - dnscontrol preview
-    when:
-      event:
-        - pull_request
-
-trigger:
-  event:
-    - push
