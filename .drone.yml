@@ -4,7 +4,7 @@ name: dnscontrol
 
 steps:
   - name: preview
-    image: stackexchange/dnscontrol:lates
+    image: stackexchange/dnscontrol:latest
     settings:
       from_secret: docker_secret
     commands:
