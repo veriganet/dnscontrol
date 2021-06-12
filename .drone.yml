@@ -9,5 +9,5 @@ steps:
       from_secret: docker_secret
     commands:
       - sed -i 's/$CLOUD_FLARE_API_TOKEN/CLOUD_FLARE_API_TOKEN/g' creds_template.json
-      - mv creds_template.json > creds.json
+      - mv creds_template.json creds.json
       - dnscontrol preview
