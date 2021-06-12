@@ -29,6 +29,7 @@ steps:
     when:
       event:
         - promote
+        - success
       target:
         - prod
     depends_on:
