@@ -14,3 +14,7 @@ steps:
     when:
       event:
         - pull_request
+
+trigger:
+  event:
+    - push
