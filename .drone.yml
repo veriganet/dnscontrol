@@ -1,0 +1,16 @@
+---
+kind: pipeline
+type: kubernetes
+name: dnscontrol
+
+steps:
+  - name: preview
+    image: stackexchange/dnscontrol:lates
+    settings:
+      from_secret: docker_secret
+    commands:
+      - printenv DNSCONTROL_CREDS | tee creds.json
+      - dnscontrol preview
+    when:
+      event:
+        - push
