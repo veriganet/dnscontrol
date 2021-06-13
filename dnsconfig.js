@@ -30,5 +30,5 @@ D("veriga.net",
     TXT("_amazonses", "e+jUcAB5gu0vMfK6zkP41og6xh/Kj+wRRfDSxTHobh8="),
     CNAME("lm6kyszxwsadisi4djdcfopgaha4jcaa._domainkey", "lm6kyszxwsadisi4djdcfopgaha4jcaa.dkim.amazonses.com.", CF_PROXY_OFF),
     CNAME("grto6q7zwdkf2ugak4ervn7pysmixfyr._domainkey", "grto6q7zwdkf2ugak4ervn7pysmixfyr.dkim.amazonses.com.", CF_PROXY_OFF),
-    CNAME("ljo6letvym2abbosrbuv5xv32wjspdu5._domainkey", "ljo6letvym2abbosrbuv5xv32wjspdu5.dkim.amazonses.com", CF_PROXY_OFF)
+    CNAME("ljo6letvym2abbosrbuv5xv32wjspdu5._domainkey", "ljo6letvym2abbosrbuv5xv32wjspdu5.dkim.amazonses.com.", CF_PROXY_OFF)
 )
