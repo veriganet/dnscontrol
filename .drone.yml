@@ -15,8 +15,9 @@ steps:
     when:
       event:
         - push
-        - pull_request
-
+      branch:
+        exclude:
+          - master
   - name: deploy
     image: stackexchange/dnscontrol:latest
     settings:
