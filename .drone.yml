@@ -8,8 +8,8 @@ steps:
     settings:
       from_secret: docker_secret
     environment:
-      CLOUD_FLARE_API_TOKEN:
-        from_secret: CLOUD_FLARE_API_TOKEN
+      CLOUDFLARE_API_KEY:
+        from_secret: cloudflare_api_token
     commands:
       - dnscontrol preview
     when:
@@ -23,8 +23,8 @@ steps:
     settings:
       from_secret: docker_secret
     environment:
-      CLOUD_FLARE_API_TOKEN:
-        from_secret: CLOUD_FLARE_API_TOKEN
+      CLOUDFLARE_API_KEY:
+        from_secret: cloudflare_api_token
     commands:
       - dnscontrol push
     when:
