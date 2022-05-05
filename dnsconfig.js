@@ -9,12 +9,14 @@ var CF_PROXY_ON = {'cloudflare_proxy': 'on'};       // Proxy enabled.
 // k8s clusters
 var K8S0 = "97123e645323ef75300036546ecbafc0-408290970.eu-west-1.elb.amazonaws.com."
 var K8S1 = "k8s1.veriga.net."
+var K8S2 = "k8s2.veriga.net."
 
 /**** veriga.net ****/
 D("veriga.net",
     REG_NONE,
     DnsProvider(CLOUDFLARE),
     A("k8s1", "134.209.128.143", CF_PROXY_ON),
+    A("k8s2", "137.184.242.241", CF_PROXY_ON),
     ALIAS("@", K8S1, CF_PROXY_ON),
     CNAME("charts", "charts-48z76.ondigitalocean.app.", CF_PROXY_ON),
     CNAME("k8s0", K8S0, CF_PROXY_ON),
