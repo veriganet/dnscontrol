@@ -47,5 +47,5 @@ D("veriga.net",
     TXT("@", "v=spf1 include:zoho.com include:spf.mandrillapp.com ~all"),
     TXT("mandrill._domainkey", "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCrLHiExVd55zd/IQ/J/mRwSRMAocV/hMB3jXwaHH36d9NaVynQFYV8NaWi69c1veUtRzGt7yAioXqLj7Z4TeEUoOLgrKsn8YnckGs9i3B3tVFB+Ch/4mPhXWiNfNdynHWBcPcbJ8kjEQ2U8y78dHZj1YeRXXVvWob2OaKynO8/lQIDAQAB;"),
     // zoho verification
-    CNAME("ZAC1454", "vewriga.net.", CF_PROXY_ON)
+    CNAME("ZAC1454", "veriga.net.", CF_PROXY_ON)
 )
