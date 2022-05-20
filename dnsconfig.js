@@ -45,5 +45,7 @@ D("veriga.net",
     CNAME("ljo6letvym2abbosrbuv5xv32wjspdu5._domainkey", "ljo6letvym2abbosrbuv5xv32wjspdu5.dkim.amazonses.com.", CF_PROXY_OFF),
     // Mailchimp / Mandrill
     TXT("@", "v=spf1 include:zoho.com include:spf.mandrillapp.com ~all"),
-    TXT("mandrill._domainkey", "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCrLHiExVd55zd/IQ/J/mRwSRMAocV/hMB3jXwaHH36d9NaVynQFYV8NaWi69c1veUtRzGt7yAioXqLj7Z4TeEUoOLgrKsn8YnckGs9i3B3tVFB+Ch/4mPhXWiNfNdynHWBcPcbJ8kjEQ2U8y78dHZj1YeRXXVvWob2OaKynO8/lQIDAQAB;")
+    TXT("mandrill._domainkey", "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCrLHiExVd55zd/IQ/J/mRwSRMAocV/hMB3jXwaHH36d9NaVynQFYV8NaWi69c1veUtRzGt7yAioXqLj7Z4TeEUoOLgrKsn8YnckGs9i3B3tVFB+Ch/4mPhXWiNfNdynHWBcPcbJ8kjEQ2U8y78dHZj1YeRXXVvWob2OaKynO8/lQIDAQAB;"),
+    // zoho verification
+    CNAME("ZAC1454", "vewriga.net.", CF_PROXY_ON)
 )
